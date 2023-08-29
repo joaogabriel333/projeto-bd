@@ -6,3 +6,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('store',
 [UsuarioController::class, 'store']);
+
+Route::get('find/{id}',
+[UsuarioController::class, 'pesquisarPorld']);
+
+Route::get('find/cpf/{cpf}',
+[UsuarioController::class, 'pesquisarPorCpf']);
+
+Route::get('all',
+[UsuarioController::class, 'retornarTodos']);
+
+Route::get('nome',
+[UsuarioController::class, 'pesquisarPorNome']);
