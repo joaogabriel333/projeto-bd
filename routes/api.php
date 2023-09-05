@@ -18,3 +18,9 @@ Route::get('all',
 
 Route::get('nome',
 [UsuarioController::class, 'pesquisarPorNome']);
+
+Route::delete('delete/{id}',
+[UsuarioController::class, 'excluir']);
+
+Route::put('update',
+[UsuarioController::class, 'update']);
